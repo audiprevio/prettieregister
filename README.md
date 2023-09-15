@@ -1,5 +1,7 @@
 # PrettieRegister
 
+<img width="1439" alt="Screenshot 2023-09-16 at 02 16 27" src="https://github.com/audiprevio/prettieregister/assets/126348614/25aa84e3-63e3-4e08-954e-7a2083b7ae7a">
+
 PrettieRegister is a multi-step form application built with React, TypeScript, Formik, and Yup. It showcases the use of hooks, props, form handling/validation, and static type checking using TypeScript.
 
 ## Tech Stack
