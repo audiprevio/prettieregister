@@ -66,16 +66,16 @@ const validationSchema = Yup.object().shape({
 
 In the above code snippet, initialValues is an object that represents the initial state of the form. validationSchema is a Yup object that defines the validation rules for the form.
 
-### Hooks\
+### Hooks
 React hooks are used throughout the project to manage state and side effects. The useState hook is used in App.tsx to manage the current step of the form.
 
-### Props\
+### Props
 Props are used to pass data and functions between components. For example, formikProps is passed to the step components to allow them to interact with Formik's state and helper functions.
 
-### Formik\
+### Formik
 Formik is used to handle form state and submission. It provides a set of helper functions that can be used to interact with the form's state and handle form submission.
 
-### Yup\
+### Yup
 Yup is used to create a validation schema for the form. This schema is used by Formik to validate the form's values before submission.
 
 For more detailed information, please refer to the individual .tsx files in the project.
