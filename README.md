@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+# PrettieRegister
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PrettieRegister is a multi-step form application built with React, TypeScript, Formik, and Yup. It showcases the use of hooks, props, form handling/validation, and static type checking using TypeScript.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Formik
+- Yup
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Multi-step form
+- Form validation with Formik and Yup
+- State management with React hooks
+- Static Type checking with TypeScript
 
-- Configure the top-level `parserOptions` property like this:
+## Setup
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+To set up the project, follow these steps:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Initialize a new project with Vite by running `npx create-vite@latest YOUR-PROJECT-NAME --template react-ts`
+2. Navigate into the project directory with `cd YOUR-PROJECT-NAME`
+3. Install the dependencies by running `npm install`
+4. Start the development server by running `npm run dev`
+
+## Components
+
+### App.tsx
+
+This is the main component of the application. It uses the useState hook to manage the current step of the form and Formik to handle form submission.
+
+### Step1.tsx, Step2.tsx, Step3.tsx 
+
+These components represent the different steps of the form. They each accept formikProps as a prop, which is an object containing Formik's state and helper functions. They also accept onNext and onBack functions as props to navigate between steps.
+
+### formConfig.ts 
+
+This file exports the initial values and validation schema for the form. The validation schema is created using Yup.
+
+## Further Information
+
+For more detailed information, please refer to the individual .tsx files in the project.
